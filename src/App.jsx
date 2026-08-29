@@ -26,17 +26,24 @@ function App() {
     const elements = document.querySelectorAll('.reveal');
     elements.forEach((el) => observer.observe(el));
 
-    // Prevent right-click on images and videos
+    // Prevent right-click and drag on images and videos
     const disableContextMenu = (e) => {
       if (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO') {
         e.preventDefault();
       }
     };
+    const disableDrag = (e) => {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
+    };
     document.addEventListener('contextmenu', disableContextMenu);
+    document.addEventListener('dragstart', disableDrag);
 
     return () => {
       elements.forEach((el) => observer.unobserve(el));
       document.removeEventListener('contextmenu', disableContextMenu);
+      document.removeEventListener('dragstart', disableDrag);
     };
   }, []);
 
