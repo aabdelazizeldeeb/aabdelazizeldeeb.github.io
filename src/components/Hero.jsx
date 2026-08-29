@@ -1,7 +1,7 @@
 import React from 'react';
 import Scene3D from './Scene3D';
 
-import profilePic from '../assets/Images/MyPic.png';
+import profilePic from '../assets/Images/MyPic.webp';
 import cvFile from '../assets/PDF/Ahmed_Abdelaziz_CV.pdf';
 
 const Hero = () => {

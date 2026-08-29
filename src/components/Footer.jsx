@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logoPic from '../assets/logo.jpg';
+import logoPic from '../assets/logo.webp';
 
 const Footer = () => {
   return (

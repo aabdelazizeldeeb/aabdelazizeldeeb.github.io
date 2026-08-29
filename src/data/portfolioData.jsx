@@ -1,20 +1,20 @@
 import React from 'react';
 import { PenTool, Box, Database } from 'lucide-react';
 
-import imgKingSalman from '../assets/Images/Projects/KingSalmanAirport.jpg';
+import imgKingSalman from '../assets/Images/Projects/KingSalmanAirport.webp';
 import imgMars from '../assets/Images/Projects/Mars.webp';
 import imgDubai from '../assets/Images/Projects/DubaiMall.webp';
-import imgFairmont from '../assets/Images/Projects/FairmontHotel.jpg';
-import imgPortSaid from '../assets/Images/Projects/PortSaidAirport.jpg';
-import imgAhlMasr from '../assets/Images/Projects/AhlMasrWalkway.jpg';
-import imgCentralBus from '../assets/Images/Projects/CentralBusstation.jpeg';
-import imgBoysen from '../assets/Images/Projects/BoysenFactory.jpg';
-import imgChipsy from '../assets/Images/Projects/ChipsyFactory.jpg';
+import imgFairmont from '../assets/Images/Projects/FairmontHotel.webp';
+import imgPortSaid from '../assets/Images/Projects/PortSaidAirport.webp';
+import imgAhlMasr from '../assets/Images/Projects/AhlMasrWalkway.webp';
+import imgCentralBus from '../assets/Images/Projects/CentralBusstation.webp';
+import imgBoysen from '../assets/Images/Projects/BoysenFactory.webp';
+import imgChipsy from '../assets/Images/Projects/ChipsyFactory.webp';
 import imgCleopatra from '../assets/Images/Projects/CleopatraMall.webp';
-import imgHilton from '../assets/Images/Projects/HiltonHotel.jpg';
+import imgHilton from '../assets/Images/Projects/HiltonHotel.webp';
 import imgLavenir from '../assets/Images/Projects/L\'avenir.webp';
 import imgGolfPalm from '../assets/Images/Projects/golfpalm.webp';
-import imgZed from '../assets/Images/Projects/ZedClub.jpg';
+import imgZed from '../assets/Images/Projects/ZedClub.webp';
 
 export const navLinks = [
   { name: 'About', href: '#about' },

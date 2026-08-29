@@ -13,7 +13,7 @@ const formatTitle = (path) => {
 
 // Process all imports into items
 const allItems = Object.keys(imports).map(path => {
-  // Extract category from path (e.g. "../assets/Images/3D Design/IP55/image.png" -> "IP55")
+  // Extract category from path (e.g. "../assets/Images/3D Design/IP55/image.webp" -> "IP55")
   const pathParts = path.split('/');
   const category = pathParts[pathParts.length - 2]; 
   const isVideo = path.endsWith('.mp4');

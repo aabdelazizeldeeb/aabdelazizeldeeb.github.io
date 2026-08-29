@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import cvFile from '../assets/PDF/Ahmed_Abdelaziz_CV.pdf';
-import logoPic from '../assets/logo.jpg';
+import logoPic from '../assets/logo.webp';
 import { navLinks } from '../data/portfolioData';
 
 const Navbar = () => {
