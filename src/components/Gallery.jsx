@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import { Camera, Layers, ShieldCheck, PenTool, LayoutTemplate, Box, X } from 'lucide-react';
 
 // Dynamically import all images and videos from the subfolders
-const imports = import.meta.glob('../assets/Images/3D Design/**/*.{png,jpg,jpeg,mp4}', { eager: true });
+const imports = import.meta.glob('../assets/Images/3D Design/**/*.{webp,webm}', { eager: true });
 
 // Helper to format filenames into readable titles
 const formatTitle = (path) => {
@@ -16,7 +16,7 @@ const allItems = Object.keys(imports).map(path => {
   // Extract category from path (e.g. "../assets/Images/3D Design/IP55/image.webp" -> "IP55")
   const pathParts = path.split('/');
   const category = pathParts[pathParts.length - 2]; 
-  const isVideo = path.endsWith('.mp4');
+  const isVideo = path.endsWith('.webm');
 
   return {
     src: imports[path].default,
