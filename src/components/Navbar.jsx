@@ -83,6 +83,41 @@ const Navbar = () => {
           .mobile-nav-toggle { display: none !important; }
         }
       `}</style>
+    
+      {/* Mobile Menu Dropdown */}
+      {mobileMenuOpen && (
+        <div style={{
+          position: 'absolute',
+          top: '100%',
+          left: 0,
+          right: 0,
+          background: 'rgba(5, 5, 5, 0.98)',
+          backdropFilter: 'blur(10px)',
+          borderBottom: '1px solid rgba(255,255,255,0.05)',
+          padding: '2rem',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1.5rem',
+          alignItems: 'center'
+        }} className="mobile-nav-dropdown">
+          {navLinks.map((link) => (
+            <a key={link.name} href={link.href} onClick={() => setMobileMenuOpen(false)} style={{ 
+              fontSize: '1.1rem', 
+              fontWeight: 500,
+              textTransform: 'uppercase',
+              letterSpacing: '1px',
+              color: 'var(--text-primary)',
+              textDecoration: 'none'
+            }}>
+              {link.name}
+            </a>
+          ))}
+          <a href={cvFile} download="Ahmed_Abdelaziz_CV.pdf" className="btn btn-primary" style={{ padding: '0.8rem 2rem', fontSize: '1rem', width: '100%', textAlign: 'center' }}>
+            Download CV
+          </a>
+        </div>
+      )}
+
     </nav>
   );
 };
