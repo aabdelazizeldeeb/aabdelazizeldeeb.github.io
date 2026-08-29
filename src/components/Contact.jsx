@@ -34,10 +34,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const subject = encodeURIComponent('Portfolio Contact from ' + formData.name);
-    const body = encodeURIComponent(formData.message + '
-
-Sender Email: ' + formData.email);
-    window.location.href = f"mailto:A.AbdelazizEldeeb@gmail.com?subject={subject}&body={body}";
+    const body = encodeURIComponent(formData.message + '\n\nSender Email: ' + formData.email);
+    window.location.href = `mailto:A.AbdelazizEldeeb@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
