@@ -101,7 +101,7 @@ const Gallery = () => {
         }}>
           {filteredItems.map((item, index) => (
             <div 
-              key={index} 
+              key={item.src} 
               className="glass-panel" 
               style={{ padding: '0.5rem', overflow: 'hidden', cursor: 'zoom-in' }}
               onClick={() => setSelectedMedia(item)}
