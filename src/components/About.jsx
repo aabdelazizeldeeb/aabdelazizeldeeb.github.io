@@ -1,12 +1,8 @@
 import React from 'react';
-import { PenTool, Box, Database } from 'lucide-react';
+import { skills } from '../data/portfolioData';
 
 const About = () => {
-  const skills = [
-    { name: 'Technical Office & Design', icon: <PenTool size={32} color="var(--accent-gold)" />, desc: 'Shop Drawings, MTO/BOQ Preparation, Sheet Metal Design, and CNC Cutting Coordination.' },
-    { name: '3D Modeling & CAD', icon: <Box size={32} color="var(--accent-blue)" />, desc: 'Expertise in 3ds Max, Inventor, Revit, and AutoCAD for electrical busbar systems.' },
-    { name: 'Data & Automation', icon: <Database size={32} color="#10b981" />, desc: 'Power BI, Advanced Excel Modeling, and internal tools (HTML, CSS, JS, Tauri).' }
-  ];
+
 
   return (
     <section id="about" className="section reveal" style={{ background: 'rgba(255,255,255,0.01)' }}>

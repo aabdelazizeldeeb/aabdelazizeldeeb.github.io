@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import cvFile from '../assets/PDF/Ahmed_Abdelaziz_CV.pdf';
 import logoPic from '../assets/logo.jpg';
+import { navLinks } from '../data/portfolioData';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -15,12 +16,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Resume', href: '#resume' },
-    { name: 'Projects', href: '#projects' },
-    { name: '3D Renders', href: '#gallery' },
-  ];
+
 
   return (
     <nav style={{
