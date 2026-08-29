@@ -1,5 +1,7 @@
 import React from 'react';
 
+import logoPic from '../assets/logo.jpg';
+
 const Footer = () => {
   return (
     <footer className="reveal" style={{ 
@@ -10,8 +12,8 @@ const Footer = () => {
     }}>
       <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
         
-        <a href="#home" style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}>
-          Ahmed E.
+        <a href="#home" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <img src={logoPic} alt="Logo" style={{ width: '45px', height: '45px', borderRadius: '8px', objectFit: 'cover', border: '1px solid rgba(255,255,255,0.1)' }} />
         </a>
         
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
