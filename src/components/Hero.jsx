@@ -13,7 +13,19 @@ const Hero = () => {
           <h1 className="stagger-1" style={{ fontSize: 'clamp(3rem, 5vw, 5rem)', marginBottom: '0.5rem', lineHeight: '1.1', fontWeight: 800 }}>
             Ahmed <br/> <span className="text-gradient-gold">Abdelaziz</span>
           </h1>
-          <h2 className="stagger-2" style={{ fontSize: '1.3rem', color: 'var(--text-secondary)', marginBottom: '1.5rem', fontWeight: 400, letterSpacing: '1px' }}>
+          <h2 className="stagger-2" style={{ 
+            fontSize: '1rem', 
+            color: 'var(--accent-gold)', 
+            marginBottom: '2rem', 
+            fontWeight: 600, 
+            letterSpacing: '3px',
+            textTransform: 'uppercase',
+            display: 'inline-block',
+            padding: '0.5rem 1.5rem',
+            background: 'rgba(212, 175, 55, 0.05)',
+            border: '1px solid rgba(212, 175, 55, 0.2)',
+            borderRadius: '50px'
+          }}>
             Senior Technical Office & Design Specialist
           </h2>
           <p className="stagger-3" style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '2.5rem', maxWidth: '550px' }}>

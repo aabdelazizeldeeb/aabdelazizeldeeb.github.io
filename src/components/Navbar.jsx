@@ -37,9 +37,8 @@ const Navbar = () => {
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
-        <a href="#home" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '1.2rem', fontWeight: 600, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)', textDecoration: 'none' }}>
-          <img src={logoPic} alt="Ahmed Abdelaziz Logo" style={{ width: '40px', height: '40px', borderRadius: '8px', objectFit: 'cover' }} />
-          <span>Ahmed Abdelaziz</span>
+        <a href="#home" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <img src={logoPic} alt="Logo" style={{ width: '45px', height: '45px', borderRadius: '8px', objectFit: 'cover', border: '1px solid rgba(255,255,255,0.1)' }} />
         </a>
 
         <div style={{ display: 'none' }} className="desktop-nav">
