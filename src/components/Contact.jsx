@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 // Custom Facebook SVG Icon
@@ -25,6 +25,21 @@ const WhatsappIcon = ({ size = 20 }) => (
 );
 
 const Contact = () => {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const subject = encodeURIComponent('Portfolio Contact from ' + formData.name);
+    const body = encodeURIComponent(formData.message + '
+
+Sender Email: ' + formData.email);
+    window.location.href = f"mailto:A.AbdelazizEldeeb@gmail.com?subject={subject}&body={body}";
+  };
+
   return (
     <section id="contact" className="section reveal">
       <div className="container">
@@ -86,9 +101,9 @@ const Contact = () => {
           <form className="glass-panel stagger-3" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#fff' }}>Send a Message</h3>
             
-            <input type="text" placeholder="Your Name" style={{ width: '100%', padding: '1rem', background: 'rgba(0,0,0,0.3)', border: '1px solid var(--glass-border)', borderRadius: '8px', color: '#fff', outline: 'none' }} />
-            <input type="email" placeholder="Your Email" style={{ width: '100%', padding: '1rem', background: 'rgba(0,0,0,0.3)', border: '1px solid var(--glass-border)', borderRadius: '8px', color: '#fff', outline: 'none' }} />
-            <textarea placeholder="Message" rows="5" style={{ width: '100%', padding: '1rem', background: 'rgba(0,0,0,0.3)', border: '1px solid var(--glass-border)', borderRadius: '8px', color: '#fff', outline: 'none', resize: 'vertical' }}></textarea>
+            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" style={{ width: "100%", padding: "1rem", background: "rgba(0,0,0,0.3)", border: "1px solid var(--glass-border)", borderRadius: "8px", color: "#fff", outline: "none" }} />
+            <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" style={{ width: "100%", padding: "1rem", background: "rgba(0,0,0,0.3)", border: "1px solid var(--glass-border)", borderRadius: "8px", color: "#fff", outline: "none" }} />
+            <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" rows="5" style={{ width: "100%", padding: "1rem", background: "rgba(0,0,0,0.3)", border: "1px solid var(--glass-border)", borderRadius: "8px", color: "#fff", outline: "none", resize: "vertical" }}></textarea>
             
             <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: '1rem' }} onClick={(e) => { e.preventDefault(); window.location.href = 'mailto:A.AbdelazizEldeeb@gmail.com'; }}>
               Send Message

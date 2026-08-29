@@ -28,7 +28,7 @@ const About = () => {
           
           <div className="grid" style={{ gridTemplateColumns: '1fr', gap: '1.5rem' }}>
             {skills.map((skill, index) => (
-              <div key={index} className={`glass-panel stagger-${(index + 1) % 4 + 1}`} style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', padding: '1.5rem' }}>
+              <div key={skill.name} className={`glass-panel stagger-${(index + 1) % 4 + 1}`} style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', padding: '1.5rem' }}>
                 <div style={{ 
                   background: 'rgba(255,255,255,0.05)', 
                   padding: '1rem', 

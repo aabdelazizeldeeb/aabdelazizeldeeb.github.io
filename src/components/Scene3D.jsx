@@ -51,4 +51,4 @@ const Scene3D = () => {
   );
 };
 
-export default Scene3D;
+export default React.memo(Scene3D);

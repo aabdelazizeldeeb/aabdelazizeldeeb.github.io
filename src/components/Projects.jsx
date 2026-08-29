@@ -65,7 +65,7 @@ const Projects = () => {
           animationDuration: animationDuration
         }}>
           {marqueeProjects.map((project, index) => (
-            <div key={index} className="glass-panel project-card" style={{ 
+            <div key={project.title + index} className="glass-panel project-card" style={{ 
               padding: 0, 
               overflow: 'hidden', 
               display: 'flex', 
