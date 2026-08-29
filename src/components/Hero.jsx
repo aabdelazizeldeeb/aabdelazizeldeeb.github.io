@@ -14,17 +14,12 @@ const Hero = () => {
             Ahmed <br/> <span className="text-gradient-gold">Abdelaziz</span>
           </h1>
           <h2 className="stagger-2" style={{ 
-            fontSize: '1rem', 
+            fontSize: '1.2rem', 
             color: 'var(--accent-gold)', 
             marginBottom: '2rem', 
-            fontWeight: 600, 
-            letterSpacing: '3px',
-            textTransform: 'uppercase',
-            display: 'inline-block',
-            padding: '0.5rem 1.5rem',
-            background: 'rgba(212, 175, 55, 0.05)',
-            border: '1px solid rgba(212, 175, 55, 0.2)',
-            borderRadius: '50px'
+            fontWeight: 500, 
+            letterSpacing: '2px',
+            textTransform: 'uppercase'
           }}>
             Senior Technical Office & Design Specialist
           </h2>
