@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import cvFile from '../assets/PDF/Ahmed_Abdelaziz_CV.pdf';
+import logoPic from '../assets/logo.jpg';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -35,9 +36,10 @@ const Navbar = () => {
       transition: 'all 0.4s ease'
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <a href="#home" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.5rem', fontWeight: 700, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)', textDecoration: 'none' }}>
-          <div style={{ background: 'var(--accent-gold)', color: '#000', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '1.2rem', fontWeight: 900 }}>A</div>
-          <span style={{ letterSpacing: '2px' }}>A.E</span>
+
+        <a href="#home" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '1.2rem', fontWeight: 600, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)', textDecoration: 'none' }}>
+          <img src={logoPic} alt="Ahmed Abdelaziz Logo" style={{ width: '40px', height: '40px', borderRadius: '8px', objectFit: 'cover' }} />
+          <span>Ahmed Abdelaziz</span>
         </a>
 
         <div style={{ display: 'none' }} className="desktop-nav">
